@@ -1,0 +1,1 @@
+<?php /**PATH /opt/lampp/htdocs/LibarySystem/app/views/auth/register.blade.php ENDPATH**/ ?>
