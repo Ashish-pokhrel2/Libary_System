@@ -139,9 +139,9 @@ class AuthController extends Controller
         $this->requireAuth();
         
         if ($this->isLibrarian()) {
-            $this->view('dashboard.dashboard');
+            $this->view('dashboard.librarian');
         } else {
-            $this->view('dashboard.dashboard');
+            $this->view('dashboard.reader');
         }
     }
 }

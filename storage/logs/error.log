@@ -917,3 +917,17 @@ Stack trace:
 #8 /opt/lampp/htdocs/LibarySystem/public/index.php(91): App\Controllers\AuthController->showLogin()
 #9 {main}
 
+[2026-01-18 09:02:51] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/layouts/app.blade.php) (View: /opt/lampp/htdocs/LibarySystem/app/views/layouts/app.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(142): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(91): App\Controllers\AuthController->dashboard()
+#9 {main}
+

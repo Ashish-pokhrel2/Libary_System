@@ -66,3 +66,5 @@ class BladeEngine
         return $this->factory->make($template, $data)->render();
     }
 }
+
+

@@ -1,4 +1,6 @@
+@extends('layouts.auth')
 
+@section('content')
             <div class="auth-form">
                 <h2>Register</h2>
 
@@ -39,6 +41,4 @@
                     <p>Already have an account? <a href="/login">Login here</a></p>
                 </div>
             </div>
-        </div>
-    </div>
-
+@endsection
