@@ -931,3 +931,83 @@ Stack trace:
 #8 /opt/lampp/htdocs/LibarySystem/public/index.php(91): App\Controllers\AuthController->dashboard()
 #9 {main}
 
+[2026-01-20 15:05:47] EXCEPTION: Class "App\Controllers\AuthorController" not found
+File: /opt/lampp/htdocs/LibarySystem/public/index.php (Line: 95)
+Stack trace:
+#0 {main}
+
+[2026-01-20 15:05:50] EXCEPTION: Class "App\Controllers\AuthorController" not found
+File: /opt/lampp/htdocs/LibarySystem/public/index.php (Line: 95)
+Stack trace:
+#0 {main}
+
+[2026-01-20 15:05:50] EXCEPTION: Class "App\Controllers\AuthorController" not found
+File: /opt/lampp/htdocs/LibarySystem/public/index.php (Line: 95)
+Stack trace:
+#0 {main}
+
+[2026-01-20 15:05:51] EXCEPTION: Class "App\Controllers\AuthorController" not found
+File: /opt/lampp/htdocs/LibarySystem/public/index.php (Line: 95)
+Stack trace:
+#0 {main}
+
+[2026-01-20 15:07:03] EXCEPTION: Class "App\Models\Author" not found
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 15)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(95): App\Controllers\AuthorController->__construct()
+#1 {main}
+
+[2026-01-20 15:07:04] EXCEPTION: Class "App\Models\Author" not found
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 15)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(95): App\Controllers\AuthorController->__construct()
+#1 {main}
+
+[2026-01-20 15:07:04] EXCEPTION: Class "App\Models\Author" not found
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 15)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(95): App\Controllers\AuthorController->__construct()
+#1 {main}
+
+[2026-01-20 15:07:04] EXCEPTION: Class "App\Models\Author" not found
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 15)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(95): App\Controllers\AuthorController->__construct()
+#1 {main}
+
+[2026-01-20 15:14:30] EXCEPTION: Call to undefined method App\Models\Author::find()
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 69)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
+#1 {main}
+
+[2026-01-20 15:14:31] EXCEPTION: Call to undefined method App\Models\Author::find()
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 69)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
+#1 {main}
+
+[2026-01-20 15:14:31] EXCEPTION: Call to undefined method App\Models\Author::find()
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 69)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
+#1 {main}
+
+[2026-01-20 15:14:31] EXCEPTION: Call to undefined method App\Models\Author::find()
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 69)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
+#1 {main}
+
+[2026-01-20 15:14:31] EXCEPTION: Call to undefined method App\Models\Author::find()
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 69)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
+#1 {main}
+
+[2026-01-20 15:14:39] EXCEPTION: Call to undefined method App\Models\Author::find()
+File: /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthorController.php (Line: 69)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
+#1 {main}
+
