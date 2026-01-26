@@ -32,6 +32,27 @@ class BladeEngine
         $resolver = new EngineResolver();
         $resolver->register('blade', function () use ($filesystem, $cachePath) {
             $compiler = new BladeCompiler($filesystem, $cachePath);
+            
+            // Register custom @auth directive
+            $compiler->directive('auth', function () {
+                return '<?php if(auth()->check()): ?>';
+            });
+            
+            // Register custom @endauth directive
+            $compiler->directive('endauth', function () {
+                return '<?php endif; ?>';
+            });
+            
+            // Register custom @guest directive
+            $compiler->directive('guest', function () {
+                return '<?php if(!auth()->check()): ?>';
+            });
+            
+            // Register custom @endguest directive
+            $compiler->directive('endguest', function () {
+                return '<?php endif; ?>';
+            });
+            
             return new CompilerEngine($compiler);
         });
 
@@ -66,5 +87,4 @@ class BladeEngine
         return $this->factory->make($template, $data)->render();
     }
 }
-
 

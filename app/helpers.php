@@ -91,3 +91,33 @@ if (!function_exists('url')) {
         return rtrim('http://localhost:8080', '/') . '/' . ltrim($path, '/');
     }
 }
+
+if (!function_exists('auth')) {
+    function auth()
+    {
+        return new class {
+            public function check()
+            {
+                return isset($_SESSION['user_id']) && !empty($_SESSION['user_id']);
+            }
+            
+            public function user()
+            {
+                if (isset($_SESSION['user_id'])) {
+                    return (object) [
+                        'id' => $_SESSION['user_id'],
+                        'username' => $_SESSION['username'] ?? null,
+                        'role' => $_SESSION['user_role'] ?? null,
+                        'full_name' => $_SESSION['full_name'] ?? null,
+                    ];
+                }
+                return null;
+            }
+            
+            public function id()
+            {
+                return $_SESSION['user_id'] ?? null;
+            }
+        };
+    }
+}

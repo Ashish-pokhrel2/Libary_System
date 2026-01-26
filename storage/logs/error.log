@@ -1011,3 +1011,409 @@ Stack trace:
 #0 /opt/lampp/htdocs/LibarySystem/public/index.php(103): App\Controllers\AuthorController->edit()
 #1 {main}
 
+[2026-01-26 06:27:56] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:27:58] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:27:58] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:27:58] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:27:59] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:27:59] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:27:59] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:28:00] EXCEPTION: Class "PhpOption\Option" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 254)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:15] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:15] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:16] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:16] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:17] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:17] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:17] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:31:17] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:50] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:52] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:52] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:52] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:53] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:53] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:53] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:32:53] EXCEPTION: Class "Dotenv\Repository\RepositoryBuilder" not found (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/vendor/illuminate/support/Env.php (Line: 79)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:36:21] EXCEPTION: Call to undefined function auth() (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/cache/views/295ee04af883a3456d9bae185f13a75a.php (Line: 16)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(66): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:38:03] EXCEPTION: Call to undefined method stdClass::check() (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/cache/views/295ee04af883a3456d9bae185f13a75a.php (Line: 16)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(87): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:38:03] EXCEPTION: Call to undefined method stdClass::check() (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/cache/views/295ee04af883a3456d9bae185f13a75a.php (Line: 16)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(87): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:38:04] EXCEPTION: Call to undefined method stdClass::check() (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/cache/views/295ee04af883a3456d9bae185f13a75a.php (Line: 16)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(87): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+
+[2026-01-26 06:38:04] EXCEPTION: Call to undefined method stdClass::check() (View: /opt/lampp/htdocs/LibarySystem/app/views/categories/index.blade.php)
+File: /opt/lampp/htdocs/LibarySystem/cache/views/295ee04af883a3456d9bae185f13a75a.php (Line: 16)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/Engines/CompilerEngine.php(76): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#2 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(208): Illuminate\View\Engines\CompilerEngine->get()
+#3 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(191): Illuminate\View\View->getContents()
+#4 /opt/lampp/htdocs/LibarySystem/vendor/illuminate/view/View.php(160): Illuminate\View\View->renderContents()
+#5 /opt/lampp/htdocs/LibarySystem/app/Core/BladeEngine.php(87): Illuminate\View\View->render()
+#6 /opt/lampp/htdocs/LibarySystem/app/Core/Controller.php(22): App\Core\BladeEngine->render()
+#7 /opt/lampp/htdocs/LibarySystem/app/Controllers/CategoryController.php(24): App\Core\Controller->view()
+#8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
+#9 {main}
+

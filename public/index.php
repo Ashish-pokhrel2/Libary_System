@@ -79,12 +79,15 @@ try {
             '/dashboard' => ['App\Controllers\AuthController', 'dashboard'],
             '/authors' => ['App\Controllers\AuthorController', 'index'],
             '/authors/create' => ['App\Controllers\AuthorController', 'create'],
+            '/categories' => ['App\Controllers\CategoryController', 'index'],
+            '/categories/create' => ['App\Controllers\CategoryController', 'create'],
         ],
 
         'POST' => [
             '/login' => ['App\Controllers\AuthController', 'login'],
             '/register' => ['App\Controllers\AuthController', 'register'],
             '/authors/store' => ['App\Controllers\AuthorController', 'store'],
+            '/categories/store' => ['App\Controllers\CategoryController', 'store'],
 
         ]
     ];
@@ -117,9 +120,24 @@ try {
     }
 
 
+    // Categories dynamic routes
+    if (preg_match('#^/categories/edit/(\d+)$#', $uri, $matches)) {
+        $controller = new \App\Controllers\CategoryController();
+        $controller->edit($matches[1]);
+        exit;
+    }
 
+    if (preg_match('#^/categories/update/(\d+)$#', $uri, $matches) && $method === 'POST') {
+        $controller = new \App\Controllers\CategoryController();
+        $controller->update($matches[1]);
+        exit;
+    }
 
-
+    if (preg_match('#^/categories/delete/(\d+)$#', $uri, $matches)) {
+        $controller = new \App\Controllers\CategoryController();
+        $controller->delete($matches[1]);
+        exit;
+    }
 
 
     // 404 Not Found

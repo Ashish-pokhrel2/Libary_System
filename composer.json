@@ -13,7 +13,9 @@
     ],
     "require": {
         "illuminate/view": "^12.47",
-        "illuminate/filesystem": "^12.47"
+        "illuminate/filesystem": "^12.47",
+        "phpoption/phpoption": "^1.9",
+        "vlucas/phpdotenv": "^5.6"
     },
     "scripts": {
         "serve": "php -S localhost:8080 -t public"
