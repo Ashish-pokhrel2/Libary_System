@@ -81,6 +81,10 @@ try {
             '/authors/create' => ['App\Controllers\AuthorController', 'create'],
             '/categories' => ['App\Controllers\CategoryController', 'index'],
             '/categories/create' => ['App\Controllers\CategoryController', 'create'],
+            '/books' => ['App\Controllers\BookController', 'index'],
+            '/books/create' => ['App\Controllers\BookController', 'create'],
+            '/books/search' => ['App\Controllers\BookController', 'search'],
+            '/books/autocomplete' => ['App\Controllers\BookController', 'autocomplete'],
         ],
 
         'POST' => [
@@ -88,6 +92,8 @@ try {
             '/register' => ['App\Controllers\AuthController', 'register'],
             '/authors/store' => ['App\Controllers\AuthorController', 'store'],
             '/categories/store' => ['App\Controllers\CategoryController', 'store'],
+            '/books/store' => ['App\Controllers\BookController', 'store'],
+            '/books/search' => ['App\Controllers\BookController', 'search'],
 
         ]
     ];
@@ -135,6 +141,32 @@ try {
 
     if (preg_match('#^/categories/delete/(\d+)$#', $uri, $matches)) {
         $controller = new \App\Controllers\CategoryController();
+        $controller->delete($matches[1]);
+        exit;
+    }
+
+    // Books dynamic routes
+
+    if (preg_match('#^/books/show/(\d+)$#', $uri, $matches)) {
+        $controller = new \App\Controllers\BookController();
+        $controller->show($matches[1]);
+        exit;
+    }
+
+    if (preg_match('#^/books/edit/(\d+)$#', $uri, $matches)) {
+        $controller = new \App\Controllers\BookController();
+        $controller->edit($matches[1]);
+        exit;
+    }
+
+    if (preg_match('#^/books/update/(\d+)$#', $uri, $matches) && $method === 'POST') {
+        $controller = new \App\Controllers\BookController();
+        $controller->update($matches[1]);
+        exit;
+    }
+
+    if (preg_match('#^/books/delete/(\d+)$#', $uri, $matches)) {
+        $controller = new \App\Controllers\BookController();
         $controller->delete($matches[1]);
         exit;
     }
