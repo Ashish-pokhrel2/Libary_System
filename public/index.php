@@ -174,7 +174,15 @@ try {
 
     // 404 Not Found
     http_response_code(404);
-    echo "404 - Page Not Found";
+    
+    // Load BladeEngine for 404 page
+    $blade = new \App\Core\BladeEngine(
+        __DIR__ . '/../app/views',
+        __DIR__ . '/../cache/views'
+    );
+    
+    echo $blade->render('errors.404', []);
+    exit;
 
 } catch (\Exception $e) {
     // Re-throw to be caught by global exception handler
