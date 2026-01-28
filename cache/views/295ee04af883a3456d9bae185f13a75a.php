@@ -30,7 +30,7 @@
                         <td class="actions">
                             <?php if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian'): ?>
                                 <a href="/categories/edit/<?php echo e($category['id']); ?>" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/categories/delete/<?php echo e($category['id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this category?')">Delete</a>
+                                <a href="/categories/delete/<?php echo e($category['id']); ?>" onclick="return confirmDelete(this.href, 'category')" class="btn btn-sm btn-danger">Delete</a>
                             <?php else: ?>
                                 <span class="text-muted">View Only</span>
                             <?php endif; ?>

@@ -19,11 +19,16 @@ class CategoryController extends Controller
     {
         $this->requireAuth();
         
-        $categories = $this->categoryModel->getAllWithBooksCount();
-        
-        $this->view('categories.index', [
-            'categories' => $categories
-        ]);
+        try {
+            $categories = $this->categoryModel->getAllWithBooksCount();
+            
+            $this->view('categories.index', [
+                'categories' => $categories
+            ]);
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Failed to load categories. Please try again later.';
+            $this->redirect('/dashboard');
+        }
     }
 
     public function create()
@@ -64,16 +69,21 @@ class CategoryController extends Controller
     {
         $this->requireLibrarian();
         
-        $category = $this->categoryModel->find($id);
-        
-        if (!$category) {
-            $_SESSION['error'] = 'Category not found.';
+        try {
+            $category = $this->categoryModel->find($id);
+            
+            if (!$category) {
+                $_SESSION['error'] = 'Category not found.';
+                $this->redirect('/categories');
+            }
+            
+            $this->view('categories.edit', [
+                'category' => $category
+            ]);
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Failed to load category data. Please try again later.';
             $this->redirect('/categories');
         }
-        
-        $this->view('categories.edit', [
-            'category' => $category
-        ]);
     }
 
     public function update($id)

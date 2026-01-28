@@ -36,18 +36,23 @@ class AuthController extends Controller
             $this->redirect('/login');
         }
         
-        $user = $this->userModel->authenticate($username, $password);
-        
-        if ($user) {
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['username'] = $user['username'];
-            $_SESSION['user_role'] = $user['role'];
-            $_SESSION['full_name'] = $user['full_name'];
-            $_SESSION['success'] = 'Welcome back, ' . $user['full_name'] . '!';
+        try {
+            $user = $this->userModel->authenticate($username, $password);
             
-            $this->redirect('/dashboard');
-        } else {
-            $_SESSION['error'] = 'Invalid username or password.';
+            if ($user) {
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['user_role'] = $user['role'];
+                $_SESSION['full_name'] = $user['full_name'];
+                $_SESSION['success'] = 'Welcome back, ' . $user['full_name'] . '!';
+                
+                $this->redirect('/dashboard');
+            } else {
+                $_SESSION['error'] = 'Invalid username or password.';
+                $this->redirect('/login');
+            }
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Login failed. Please try again later.';
             $this->redirect('/login');
         }
     }
@@ -95,13 +100,23 @@ class AuthController extends Controller
         }
         
         // Check if username exists
-        if ($this->userModel->findByUsername($username)) {
-            $errors[] = 'Username already exists.';
+        try {
+            if ($this->userModel->findByUsername($username)) {
+                $errors[] = 'Username already exists.';
+            }
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Registration failed. Please try again later.';
+            $this->redirect('/register');
         }
         
         // Check if email exists
-        if ($this->userModel->findByEmail($email)) {
-            $errors[] = 'Email already exists.';
+        try {
+            if ($this->userModel->findByEmail($email)) {
+                $errors[] = 'Email already exists.';
+            }
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Registration failed. Please try again later.';
+            $this->redirect('/register');
         }
         
         if (!empty($errors)) {
@@ -111,19 +126,24 @@ class AuthController extends Controller
         }
         
         // Create user
-        $userId = $this->userModel->createUser([
-            'username' => $username,
-            'email' => $email,
-            'password' => $password,
-            'full_name' => $fullName,
-            'role' => 'reader'
-        ]);
-        
-        if ($userId) {
-            $_SESSION['success'] = 'Registration successful! Please log in.';
-            $this->redirect('/login');
-        } else {
-            $_SESSION['error'] = 'Registration failed. Please try again.';
+        try {
+            $userId = $this->userModel->createUser([
+                'username' => $username,
+                'email' => $email,
+                'password' => $password,
+                'full_name' => $fullName,
+                'role' => 'reader'
+            ]);
+            
+            if ($userId) {
+                $_SESSION['success'] = 'Registration successful! Please log in.';
+                $this->redirect('/login');
+            } else {
+                $_SESSION['error'] = 'Registration failed. Please try again.';
+                $this->redirect('/register');
+            }
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Registration failed. Please try again later.';
             $this->redirect('/register');
         }
     }

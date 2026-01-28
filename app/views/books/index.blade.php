@@ -39,7 +39,7 @@
                             <a href="/books/show/{{ $book['id'] }}" class="btn btn-sm btn-info">View</a>
                             @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
                                 <a href="/books/edit/{{ $book['id'] }}" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/books/delete/{{ $book['id'] }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this book?')">Delete</a>
+                                <a href="/books/delete/{{ $book['id'] }}" onclick="return confirmDelete(this.href, 'book')" class="btn btn-sm btn-danger">Delete</a>
                             @endif
                         </td>
                     </tr>

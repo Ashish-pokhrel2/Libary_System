@@ -32,7 +32,7 @@
                         <td class="actions">
                             <?php if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian'): ?>
                                 <a href="/authors/edit/<?php echo e($author['id']); ?>" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/authors/delete/<?php echo e($author['id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this author?')">Delete</a>
+                                <a href="/authors/delete/<?php echo e($author['id']); ?>" onclick="return confirmDelete(this.href, 'author')" class="btn btn-sm btn-danger">Delete</a>
                             <?php else: ?>
                                 <span class="text-muted">View Only</span>
                             <?php endif; ?>

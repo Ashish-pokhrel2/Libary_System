@@ -27,14 +27,25 @@ set_exception_handler(function ($exception) {
 
     // Show error page
     http_response_code(500);
-    $errorMessage = 'An unexpected error occurred';
-
-    echo "<!DOCTYPE html><html><head><title>Server Error</title></head><body>";
-    echo "<h1>500 - Internal Server Error</h1>";
-    echo "<p>An unexpected error occurred.</p>";
-    echo "<pre>" . htmlspecialchars($exception->getMessage()) . "</pre>";
-    echo "<pre>" . htmlspecialchars($exception->getTraceAsString()) . "</pre>";
-    echo "</body></html>";
+    
+    // Try to load BladeEngine for pretty error page
+    try {
+        $blade = new \App\Core\BladeEngine(
+            __DIR__ . '/../app/views',
+            __DIR__ . '/../cache/views'
+        );
+        
+        echo $blade->render('errors.500', []);
+    } catch (\Exception $e) {
+        // Fallback to basic HTML if BladeEngine fails
+        echo "<!DOCTYPE html><html><head><title>Server Error</title></head><body>";
+        echo "<h1>500 - Internal Server Error</h1>";
+        echo "<p>An unexpected error occurred. Please try again later.</p>";
+        if (ini_get('display_errors')) {
+            echo "<pre>" . htmlspecialchars($exception->getMessage()) . "</pre>";
+        }
+        echo "</body></html>";
+    }
     exit;
 });
 

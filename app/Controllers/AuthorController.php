@@ -19,11 +19,16 @@ class AuthorController extends Controller
     {
         $this->requireAuth();
         
-        $authors = $this->authorModel->getAllWithBooksCount();
-        
-        $this->view('authors.index', [
-            'authors' => $authors
-        ]);
+        try {
+            $authors = $this->authorModel->getAllWithBooksCount();
+            
+            $this->view('authors.index', [
+                'authors' => $authors
+            ]);
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Failed to load authors. Please try again later.';
+            $this->redirect('/dashboard');
+        }
     }
 
     public function create()
@@ -66,16 +71,21 @@ class AuthorController extends Controller
     {
         $this->requireLibrarian();
         
-        $author = $this->authorModel->find($id);
-        
-        if (!$author) {
-            $_SESSION['error'] = 'Author not found.';
+        try {
+            $author = $this->authorModel->find($id);
+            
+            if (!$author) {
+                $_SESSION['error'] = 'Author not found.';
+                $this->redirect('/authors');
+            }
+            
+            $this->view('authors.edit', [
+                'author' => $author
+            ]);
+        } catch (\Exception $e) {
+            $_SESSION['error'] = 'Failed to load author data. Please try again later.';
             $this->redirect('/authors');
         }
-        
-        $this->view('authors.edit', [
-            'author' => $author
-        ]);
     }
 
     public function update($id)

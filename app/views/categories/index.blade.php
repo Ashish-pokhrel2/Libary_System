@@ -32,7 +32,7 @@
                         <td class="actions">
                             @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
                                 <a href="/categories/edit/{{ $category['id'] }}" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/categories/delete/{{ $category['id'] }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this category?')">Delete</a>
+                                <a href="/categories/delete/{{ $category['id'] }}" onclick="return confirmDelete(this.href, 'category')" class="btn btn-sm btn-danger">Delete</a>
                             @else
                                 <span class="text-muted">View Only</span>
                             @endif

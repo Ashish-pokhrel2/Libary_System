@@ -1417,3 +1417,211 @@ Stack trace:
 #8 /opt/lampp/htdocs/LibarySystem/public/index.php(99): App\Controllers\CategoryController->index()
 #9 {main}
 
+[2026-01-27 15:34:05] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:07] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:08] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:08] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:08] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:09] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:09] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:09] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:10] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:10] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:10] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:18] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:19] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:20] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:21] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:22] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:22] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:23] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:26] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:26] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:26] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:26] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:26] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:34:27] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:46:37] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+
+[2026-01-27 15:46:37] EXCEPTION: Unable to connect to the database. Please try again later.
+File: /opt/lampp/htdocs/LibarySystem/app/Core/Model.php (Line: 28)
+Stack trace:
+#0 /opt/lampp/htdocs/LibarySystem/app/Core/Model.php(15): App\Core\Model->getConnection()
+#1 /opt/lampp/htdocs/LibarySystem/app/Controllers/AuthController.php(15): App\Core\Model->__construct()
+#2 /opt/lampp/htdocs/LibarySystem/public/index.php(115): App\Controllers\AuthController->__construct()
+#3 {main}
+

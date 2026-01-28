@@ -16,22 +16,30 @@ class Author extends Model
 
     public function getBooksCount($authorId)
     {
-        $stmt = $this->db->prepare("SELECT COUNT(*) as count FROM books WHERE author_id = ?");
-        $stmt->execute([$authorId]);
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        return $result['count'];
+        try {
+            $stmt = $this->db->prepare("SELECT COUNT(*) as count FROM books WHERE author_id = ?");
+            $stmt->execute([$authorId]);
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $result['count'];
+        } catch (\PDOException $e) {
+            $this->handleError('Failed to get books count for author', $e);
+        }
     }
 
     public function getAllWithBooksCount()
     {
-        $sql = "SELECT a.*, COUNT(b.id) as books_count 
-                FROM {$this->table} a
-                LEFT JOIN books b ON a.id = b.author_id
-                GROUP BY a.id
-                ORDER BY a.name ASC";
-        
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        try {
+            $sql = "SELECT a.*, COUNT(b.id) as books_count 
+                    FROM {$this->table} a
+                    LEFT JOIN books b ON a.id = b.author_id
+                    GROUP BY a.id
+                    ORDER BY a.name ASC";
+            
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (\PDOException $e) {
+            $this->handleError('Failed to get all authors with books count', $e);
+        }
     }
 }
