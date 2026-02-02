@@ -4,7 +4,7 @@
 <div class="page-header">
     <h1>Authors</h1>
     @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-        <a href="/authors/create" class="btn btn-success">Add New Author</a>
+        <a href="{{ route('authors/create') }}" class="btn btn-success">Add New Author</a>
     @endif
 </div>
 
@@ -33,8 +33,8 @@
                         <td>{{ $author['books_count'] ?? 0 }}</td>
                         <td class="actions">
                             @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-                                <a href="/authors/edit/{{ $author['id'] }}" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/authors/delete/{{ $author['id'] }}" onclick="return confirmDelete(this.href, 'author')" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="{{ route('authors/edit/' . $author['id']) }}" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="{{ route('authors/delete/' . $author['id']) }}" onclick="return confirmDelete(this.href, 'author')" class="btn btn-sm btn-danger">Delete</a>
                             @else
                                 <span class="text-muted">View Only</span>
                             @endif

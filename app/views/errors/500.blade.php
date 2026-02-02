@@ -14,7 +14,7 @@
                 </p>
                 
                 <div class="error-actions mt-4">
-                    <a href="/dashboard" class="btn btn-primary">
+                    <a href="{{ route('dashboard') }}" class="btn btn-primary">
                         <i class="fas fa-home"></i> Go to Dashboard
                     </a>
                     <a href="javascript:history.back()" class="btn btn-secondary">

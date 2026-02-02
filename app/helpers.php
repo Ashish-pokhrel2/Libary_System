@@ -81,14 +81,44 @@ if (!function_exists('old')) {
 if (!function_exists('asset')) {
     function asset($path)
     {
-        return '/' . ltrim($path, '/');
+        // Get the base path for shared hosting
+        $scriptName = dirname($_SERVER['SCRIPT_NAME']);
+        $basePath = ($scriptName !== '/' && $scriptName !== '\\') ? $scriptName : '';
+        
+        return $basePath . '/' . ltrim($path, '/');
     }
 }
 
 if (!function_exists('url')) {
     function url($path = '')
     {
-        return rtrim('http://localhost:8080', '/') . '/' . ltrim($path, '/');
+        // Get the base URL for shared hosting
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://';
+        $host = $_SERVER['HTTP_HOST'];
+        $scriptName = dirname($_SERVER['SCRIPT_NAME']);
+        $basePath = ($scriptName !== '/' && $scriptName !== '\\') ? $scriptName : '';
+        
+        return $protocol . $host . $basePath . '/' . ltrim($path, '/');
+    }
+}
+
+if (!function_exists('route')) {
+    function route($path = '')
+    {
+        // For form actions and redirects - just return the path with base
+        $scriptName = dirname($_SERVER['SCRIPT_NAME']);
+        $basePath = ($scriptName !== '/' && $scriptName !== '\\') ? rtrim($scriptName, '/') : '';
+        
+        // Clean the path
+        $cleanPath = '/' . ltrim($path, '/');
+        
+        // Return base path + clean path
+        $fullPath = $basePath . $cleanPath;
+        
+        // Debug for server issues
+        error_log("Route function: path='$path', basePath='$basePath', fullPath='$fullPath'");
+        
+        return $fullPath;
     }
 }
 

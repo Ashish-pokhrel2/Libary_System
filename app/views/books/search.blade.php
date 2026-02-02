@@ -3,11 +3,11 @@
 @section('content')
 <div class="page-header">
     <h1>Search Books</h1>
-    <a href="/books" class="btn btn-secondary">Back to Books</a>
+    <a href="{{ route('books') }}" class="btn btn-secondary">Back to Books</a>
 </div>
 
 <div class="search-container">
-    <form action="/books/search" method="POST" class="search-form">
+    <form action="{{ route('books/search') }}" method="POST" class="search-form">
         @csrf
         
         <div class="form-row">
@@ -82,7 +82,7 @@
                                 <td>{{ $book['publication_year'] ?? 'N/A' }}</td>
                                 <td>{{ $book['available_quantity'] }}/{{ $book['quantity'] }}</td>
                                 <td class="actions">
-                                    <a href="/books/show/{{ $book['id'] }}" class="btn btn-sm btn-info">View</a>
+                                    <a href="{{ route('books/show/' . $book['id']) }}" class="btn btn-sm btn-info">View</a>
                                 </td>
                             </tr>
                         @endforeach

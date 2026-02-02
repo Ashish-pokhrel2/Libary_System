@@ -5,9 +5,9 @@
     <h1>Book Details</h1>
     <div>
         @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-            <a href="/books/edit/{{ $book['id'] }}" class="btn btn-primary">Edit</a>
+            <a href="{{ route('books/edit/' . $book['id']) }}" class="btn btn-primary">Edit</a>
         @endif
-        <a href="/books" class="btn btn-secondary">Back to Books</a>
+        <a href="{{ route('books') }}" class="btn btn-secondary">Back to Books</a>
     </div>
 </div>
 

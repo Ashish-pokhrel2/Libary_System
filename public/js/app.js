@@ -32,8 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function fetchAutocomplete(query) {
-        // Using Fetch API for Ajax request
-        fetch(`/books/autocomplete?query=${encodeURIComponent(query)}`)
+        // Using Fetch API for Ajax request with base URL support
+        const baseUrl = window.baseUrl || '';
+        fetch(`${baseUrl}/books/autocomplete?query=${encodeURIComponent(query)}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

@@ -30,10 +30,7 @@ set_exception_handler(function ($exception) {
     
     // Try to load BladeEngine for pretty error page
     try {
-        $blade = new \App\Core\BladeEngine(
-            __DIR__ . '/../app/views',
-            __DIR__ . '/../cache/views'
-        );
+        $blade = new \App\Core\BladeEngine();
         
         echo $blade->render('errors.500', []);
     } catch (\Exception $e) {
@@ -78,6 +75,13 @@ if (!isset($_SESSION['csrf_token'])) {
 // Simple router
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = $_SERVER['REQUEST_METHOD'];
+
+// Strip base path for shared hosting (e.g., /~username/public)
+$scriptName = dirname($_SERVER['SCRIPT_NAME']);
+if ($scriptName !== '/' && $scriptName !== '\\' && strpos($uri, $scriptName) === 0) {
+    $uri = substr($uri, strlen($scriptName));
+}
+$uri = '/' . ltrim($uri, '/');
 
 try {
     // Route definitions
@@ -187,10 +191,7 @@ try {
     http_response_code(404);
     
     // Load BladeEngine for 404 page
-    $blade = new \App\Core\BladeEngine(
-        __DIR__ . '/../app/views',
-        __DIR__ . '/../cache/views'
-    );
+    $blade = new \App\Core\BladeEngine();
     
     echo $blade->render('errors.404', []);
     exit;

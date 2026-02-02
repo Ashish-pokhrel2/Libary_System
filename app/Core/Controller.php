@@ -24,6 +24,15 @@ class Controller
 
     protected function redirect($url)
     {
+        // Handle base path for shared hosting
+        $scriptName = dirname($_SERVER['SCRIPT_NAME']);
+        $basePath = ($scriptName !== '/' && $scriptName !== '\\') ? $scriptName : '';
+        
+        // If URL is relative (starts with /), prepend base path
+        if (strpos($url, '/') === 0 && strpos($url, $basePath) !== 0) {
+            $url = $basePath . $url;
+        }
+        
         header("Location: {$url}");
         exit;
     }

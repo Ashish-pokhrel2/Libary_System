@@ -22,11 +22,18 @@ class BladeEngine
         $this->container = new Container();
         $filesystem = new Filesystem();
 
+        // Correct paths for shared hosting
         $viewPaths = [__DIR__ . '/../views'];
         $cachePath = __DIR__ . '/../../cache/views';
 
+        // Ensure cache directory exists with proper permissions
         if (!file_exists($cachePath)) {
-            mkdir($cachePath, 0755, true);
+            @mkdir($cachePath, 0755, true);
+        }
+        
+        // Ensure cache directory is writable
+        if (!is_writable($cachePath)) {
+            @chmod($cachePath, 0755);
         }
 
         $resolver = new EngineResolver();
@@ -56,8 +63,8 @@ class BladeEngine
             return new CompilerEngine($compiler);
         });
 
-        $resolver->register('php', function () {
-            return new PhpEngine();
+        $resolver->register('php', function () use ($filesystem) {
+            return new PhpEngine($filesystem);
         });
 
         $finder = new FileViewFinder($filesystem, $viewPaths);

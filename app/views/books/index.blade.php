@@ -4,7 +4,7 @@
 <div class="page-header">
     <h1>Books</h1>
     @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-        <a href="/books/create" class="btn btn-success">Add New Book</a>
+        <a href="{{ route('books/create') }}" class="btn btn-success">Add New Book</a>
     @endif
 </div>
 
@@ -36,10 +36,10 @@
                         <td>{{ $book['publication_year'] ?? 'N/A' }}</td>
                         <td>{{ $book['available_quantity'] }}/{{ $book['quantity'] }}</td>
                         <td class="actions">
-                            <a href="/books/show/{{ $book['id'] }}" class="btn btn-sm btn-info">View</a>
+                            <a href="{{ route('books/show/' . $book['id']) }}" class="btn btn-sm btn-info">View</a>
                             @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-                                <a href="/books/edit/{{ $book['id'] }}" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/books/delete/{{ $book['id'] }}" onclick="return confirmDelete(this.href, 'book')" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="{{ route('books/edit/' . $book['id']) }}" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="{{ route('books/delete/' . $book['id']) }}" onclick="return confirmDelete(this.href, 'book')" class="btn btn-sm btn-danger">Delete</a>
                             @endif
                         </td>
                     </tr>

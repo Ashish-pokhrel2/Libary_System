@@ -4,7 +4,7 @@
 <div class="page-header">
     <h1>Categories</h1>
     @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-        <a href="/categories/create" class="btn btn-success">Add New Category</a>
+        <a href="{{ route('categories/create') }}" class="btn btn-success">Add New Category</a>
     @endif
 </div>
 
@@ -31,8 +31,8 @@
                         <td>{{ $category['books_count'] ?? 0 }}</td>
                         <td class="actions">
                             @if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'librarian')
-                                <a href="/categories/edit/{{ $category['id'] }}" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="/categories/delete/{{ $category['id'] }}" onclick="return confirmDelete(this.href, 'category')" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="{{ route('categories/edit/' . $category['id']) }}" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="{{ route('categories/delete/' . $category['id']) }}" onclick="return confirmDelete(this.href, 'category')" class="btn btn-sm btn-danger">Delete</a>
                             @else
                                 <span class="text-muted">View Only</span>
                             @endif

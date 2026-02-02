@@ -3,11 +3,11 @@
 @section('content')
 <div class="page-header">
     <h1>Edit Book</h1>
-    <a href="/books" class="btn btn-secondary">Back to Books</a>
+    <a href="{{ route('books') }}" class="btn btn-secondary">Back to Books</a>
 </div>
 
 <div class="form-container">
-    <form action="/books/update/{{ $book['id'] }}" method="POST">
+    <form action="{{ route('books/update/' . $book['id']) }}" method="POST">
         @csrf
         
         <div class="form-row">
@@ -86,7 +86,7 @@
 
         <div class="form-actions">
             <button type="submit" class="btn btn-success">Update Book</button>
-            <a href="/books" class="btn btn-secondary">Cancel</a>
+            <a href="{{ route('books') }}" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
 </div>

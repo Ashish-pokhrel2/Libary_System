@@ -4,13 +4,13 @@
             <div class="auth-form">
                 <h2>Login</h2>
                 
-                <div class="demo-credentials">
+                {{-- <div class="demo-credentials">
                     <p><strong>Demo Credentials:</strong></p>
                     <p>Librarian: <code>admin</code> / <code>password</code></p>
                     <p>Reader: <code>john_reader</code> / <code>password</code></p>
-                </div>
+                </div> --}}
 
-                <form action="/login" method="POST">
+                <form action="{{ route('login') }}" method="POST">
                     @csrf
                     
                     <div class="form-group">
@@ -27,7 +27,7 @@
                 </form>
 
                 <div class="auth-links">
-                    <p>Don't have an account? <a href="/register">Register here</a></p>
+                    <p>Don't have an account? <a href="{{ route('register') }}">Register here</a></p>
                 </div>
             </div>
         </div>

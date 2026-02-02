@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library System</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ route('css/style.css') }}">
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Base URL for JavaScript -->
+    <script>
+        window.baseUrl = '{{ route("") }}';
+    </script>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/dashboard">Library System</a>
+                <a href="{{ route('dashboard') }}">Library System</a>
             </div>
             <div class="navbar-menu">
                 @if(isset($_SESSION['user_id']))
-                    <a href="/dashboard">Dashboard</a>
-                    <a href="/books">Books</a>
-                    <a href="/authors">Authors</a>
-                    <a href="/categories">Categories</a>
-                    <a href="/books/search">Search</a>
+                    <a href="{{ route('dashboard') }}">Dashboard</a>
+                    <a href="{{ route('books') }}">Books</a>
+                    <a href="{{ route('authors') }}">Authors</a>
+                    <a href="{{ route('categories') }}">Categories</a>
+                    <a href="{{ route('books/search') }}">Search</a>
                     <div class="navbar-user">
                         <span>Welcome, {{ $_SESSION['full_name'] ?? 'User' }}</span>
-                        <a href="/logout" class="btn-logout">Logout</a>
+                        <a href="{{ route('logout') }}" class="btn-logout">Logout</a>
                     </div>
                 @endif
             </div>
@@ -56,6 +60,6 @@
 
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/app.js"></script>
+    <script src="{{ route('js/app.js') }}"></script>
 </body>
 </html>

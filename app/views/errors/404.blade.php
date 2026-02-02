@@ -9,8 +9,8 @@
             Sorry, the page you are looking for doesn't exist or has been moved.
         </p>
         <div>
-            <a href="/dashboard" class="btn btn-primary" style="margin-right: 10px;">Go to Dashboard</a>
-            <a href="/books" class="btn btn-secondary">Browse Books</a>
+            <a href="{{ route('dashboard') }}" class="btn btn-primary" style="margin-right: 10px;">Go to Dashboard</a>
+            <a href="{{ route('books') }}" class="btn btn-secondary">Browse Books</a>
         </div>
     </div>
     @endsection
@@ -157,8 +157,8 @@
                 Please login or register to access the Library System.
             </p>
             <div class="btn-container">
-                <a href="/login" class="btn btn-primary">Login</a>
-                <a href="/register" class="btn btn-secondary">Register</a>
+                <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
+                <a href="{{ route('register') }}" class="btn btn-secondary">Register</a>
             </div>
         </div>
     </div>

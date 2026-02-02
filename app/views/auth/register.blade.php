@@ -4,7 +4,7 @@
             <div class="auth-form">
                 <h2>Register</h2>
 
-                <form action="/register" method="POST" id="registerForm">
+                <form action="{{ route('register') }}" method="POST" id="registerForm">
                     @csrf
                     
                     <div class="form-group">
@@ -38,7 +38,7 @@
                 </form>
 
                 <div class="auth-links">
-                    <p>Already have an account? <a href="/login">Login here</a></p>
+                    <p>Already have an account? <a href="{{ route('login') }}">Login here</a></p>
                 </div>
             </div>
 @endsection

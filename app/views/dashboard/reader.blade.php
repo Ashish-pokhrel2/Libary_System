@@ -11,7 +11,7 @@
             <h3>Browse Books</h3>
             <p>View all books available in the library.</p>
             <div class="card-actions">
-                <a href="/books" class="btn btn-primary">View All Books</a>
+                <a href="{{ route('books') }}" class="btn btn-primary">View All Books</a>
             </div>
         </div>
 
@@ -20,7 +20,7 @@
             <h3>Browse Authors</h3>
             <p>Explore books by different authors.</p>
             <div class="card-actions">
-                <a href="/authors" class="btn btn-primary">View All Authors</a>
+                <a href="{{ route('authors') }}" class="btn btn-primary">View All Authors</a>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             <h3>Browse Categories</h3>
             <p>Discover books in various categories.</p>
             <div class="card-actions">
-                <a href="/categories" class="btn btn-primary">View All Categories</a>
+                <a href="{{ route('categories') }}" class="btn btn-primary">View All Categories</a>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
             <h3>Search Books</h3>
             <p>Find books using advanced search filters.</p>
             <div class="card-actions">
-                <a href="/books/search" class="btn btn-primary">Search Books</a>
+                <a href="{{ route('books/search') }}" class="btn btn-primary">Search Books</a>
             </div>
         </div>
     </div>

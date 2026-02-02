@@ -3,11 +3,11 @@
 @section('content')
 <div class="page-header">
     <h1>Add New Category</h1>
-    <a href="/categories" class="btn btn-secondary">Back to Categories</a>
+    <a href="{{ route('categories') }}" class="btn btn-secondary">Back to Categories</a>
 </div>
 
 <div class="form-container">
-    <form action="/categories/store" method="POST">
+    <form action="{{ route('categories/store') }}" method="POST">
         @csrf
         
         <div class="form-group">
@@ -22,7 +22,7 @@
 
         <div class="form-actions">
             <button type="submit" class="btn btn-success">Add Category</button>
-            <a href="/categories" class="btn btn-secondary">Cancel</a>
+            <a href="{{ route('categories') }}" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
 </div>

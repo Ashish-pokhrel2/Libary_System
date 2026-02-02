@@ -20,7 +20,13 @@ class Model
         $config = require __DIR__ . '/../../config/database.php';
         
         try {
-            $dsn = "mysql:host={$config['host']};dbname={$config['database']};charset={$config['charset']}";
+            // Build DSN with unix_socket if provided (for shared hosting)
+            if (isset($config['unix_socket']) && !empty($config['unix_socket'])) {
+                $dsn = "mysql:unix_socket={$config['unix_socket']};dbname={$config['database']};charset={$config['charset']}";
+            } else {
+                $dsn = "mysql:host={$config['host']};dbname={$config['database']};charset={$config['charset']}";
+            }
+            
             $pdo = new PDO($dsn, $config['username'], $config['password'], $config['options']);
             return $pdo;
         } catch (PDOException $e) {
